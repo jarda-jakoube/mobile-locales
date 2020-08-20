@@ -3,9 +3,7 @@ Python Tool for generating locales string files for Android an iOS developers.
 
 ## Requirements
 ```
-Python 2.7.x
-requests
-pandas
+Docker
 ```
 
 ## Usage
@@ -18,4 +16,7 @@ First row of the spreadsheet must contain header with lang codes and platform ke
 
 If you need to use the values only at one of the platforms, just put the NOT_EXIST as the key value for ommited platform.
 
+## Generating ANDROID (CZ, SK) strings
+run `./generate_and_move.sh {ANDROID_APP_REPOSITORY}` it will download, generate actual strings and move them directly to your app directory.
 
+for more languages just edit `generate_and_move.sh`   

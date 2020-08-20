@@ -89,3 +89,12 @@ ENV/
 
 # Rope project settings
 .ropeproject
+
+#generated
+android-output/*
+!android-output/.gitkeep
+ios-output/*
+!ios-output/.gitkeep
+
+#config
+config.py
